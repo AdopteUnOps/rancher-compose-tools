@@ -1,6 +1,6 @@
 FROM buildpack-deps:jessie-curl
 
-ENV RANCHER_COMPOSE_VERSION 0.8.6
+ENV RANCHER_COMPOSE_VERSION 0.9.0
 ENV RANCHER_COMPOSE_HOME /usr/lib/rancher-compose
 
 ADD rancher-scripts/*.sh ${RANCHER_COMPOSE_HOME}/
