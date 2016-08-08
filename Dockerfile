@@ -3,9 +3,9 @@ FROM buildpack-deps:jessie-curl
 ENV RANCHER_COMPOSE_VERSION 0.9.0
 ENV RANCHER_COMPOSE_HOME /usr/lib/rancher-compose
 
-ADD rancher-scripts/*.sh ${RANCHER_COMPOSE_HOME}/
 ADD install-tools.sh /usr/local/bin/
+RUN /usr/local/bin/install-tools.sh
+
+ADD rancher-scripts/*.sh ${RANCHER_COMPOSE_HOME}/
 
 VOLUME ${RANCHER_COMPOSE_HOME}
-
-CMD /usr/local/bin/install-tools.sh
