@@ -1,6 +1,6 @@
 FROM buildpack-deps:jessie-curl
 
-ENV RANCHER_COMPOSE_VERSION 0.8.4
+ENV RANCHER_COMPOSE_VERSION 0.8.5
 ENV RANCHER_COMPOSE_HOME /usr/lib/rancher-compose
 
 ADD install-tools.sh /usr/local/bin/
